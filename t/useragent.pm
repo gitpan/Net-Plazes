@@ -67,8 +67,11 @@ sub content {
   #########
   # try and auto-fetch out of the t/data/ folder
   #
-  my ($plpath)  = $self->{uri} =~ m{https?://plazes\.net(.*)$}mx;
-  my $test_data = qq[t/data$plpath.xml];
+  my ($plpath)  = $self->{uri} =~ m{https?://plazes\.com(.*)$}mx;
+  if($plpath !~ /\.xml$/mx) {
+    $plpath .= q[.xml];
+  }
+  my $test_data = qq[t/data$plpath];
 
   if(!-e $test_data) {
     croak qq(No mock data configured for '$test_data');

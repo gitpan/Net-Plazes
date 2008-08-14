@@ -10,25 +10,28 @@ package Net::Plazes;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 __END__
 
 =head1 NAME
 
-Net::Plazes
+Net::Plazes - Documentation for Perl interface to geo-services from http://plazes.net/
 
 =head1 VERSION
 
-$LastChangedRevision$
+$Revision$
 
 =head1 SYNOPSIS
+
+ my $oUser = Net::Plazes::User->new({id => 123456});
+ print $oUser->full_name();
+ print map { $_->name(), "\n" } @{$oUser->presences()};
 
 =head1 DESCRIPTION
 
 =head1 SUBROUTINES/METHODS
-
 
 =head1 DIAGNOSTICS
 

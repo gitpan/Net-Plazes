@@ -11,13 +11,13 @@ use strict;
 use warnings;
 use base qw(Net::Plazes::Base);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 __PACKAGE__->mk_accessors(fields());
 __PACKAGE__->has_many();
 
 sub service {
-  return q[http://plazes.com/users];
+  return q[http://plazes.net/users];
 }
 
 sub fields {
@@ -29,7 +29,7 @@ __END__
 
 =head1 NAME
 
-Net::Plazes::User
+Net::Plazes::User - representation of remote resource http://plazes.net/users(.*)
 
 =head1 VERSION
 

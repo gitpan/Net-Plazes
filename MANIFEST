@@ -1,4 +1,6 @@
+Changes
 MANIFEST
+Net-Plazes-0.01.tar.gz
 README
 lib/Net/Plazes.pm
 lib/Net/Plazes/Base.pm
@@ -9,6 +11,16 @@ t/00-critic.t
 t/00-distribution.t
 t/00-pod.t
 t/00-podcoverage.t
+t/data/plazes.xml
+t/data/plazes/60501572.xml
+t/data/presences.xml
+t/data/presences/81451330.xml
+t/data/users.xml
+t/data/users/263471.xml
+t/plazes.t
+t/presences.t
+t/useragent.pm
+t/users.t
 Makefile.PL
 Build.PL
 META.yml
